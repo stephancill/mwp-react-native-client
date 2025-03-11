@@ -24,7 +24,7 @@
   "license": "Apache-2.0",
   "scripts": {
     "test": "vitest",
-    "test:coverage": "yarn test:unit && open coverage/lcov-report/index.html",
+    "test:coverage": "vitest run --coverage && open coverage/index.html",
     "prebuild": "rm -rf ./dist && node -p \"'export const LIB_VERSION = \\'' + require('./package.json').version + '\\';'\" > src/version.ts",
     "build": "tsc -p ./tsconfig.build.json && tsc-alias",
     "dev": "tsc --watch & nodemon --watch dist --delay 1 --exec tsc-alias",
@@ -59,6 +59,7 @@
     "@types/react-native": "^0.70.6",
     "@typescript-eslint/eslint-plugin": "^6.2.0",
     "@typescript-eslint/parser": "^6.2.0",
+    "@vitest/coverage-v8": "^3.0.8",
     "eslint": "^8.45.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^5.0.0",

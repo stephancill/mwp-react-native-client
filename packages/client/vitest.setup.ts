@@ -11,6 +11,3 @@ global.TextEncoder = TextEncoder;
 
 // @ts-expect-error Use util TextDecoder
 global.TextDecoder = TextDecoder;
-
-
-
