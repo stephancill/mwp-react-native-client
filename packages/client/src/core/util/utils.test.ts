@@ -1,6 +1,6 @@
-import { LIB_VERSION } from '../../version';
-import { checkErrorForInvalidRequestArgs, fetchRPCRequest } from './utils';
-import { standardErrors } from ':core/error';
+import { LIB_VERSION } from '../../version.js';
+import { checkErrorForInvalidRequestArgs, fetchRPCRequest } from './utils.js';
+import { standardErrors } from ':core/error/index.js';
 
 // @ts-expect-error-next-line
 const invalidArgsError = (args) =>

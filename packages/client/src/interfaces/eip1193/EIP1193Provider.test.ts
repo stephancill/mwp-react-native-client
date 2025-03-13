@@ -1,8 +1,8 @@
-import { MWPClient } from '../../MWPClient';
-import { EIP1193Provider } from './EIP1193Provider';
-import { standardErrors } from ':core/error';
-import { serializeError } from ':core/error/serialize';
-import { Wallet, Wallets } from ':core/wallet';
+import { MWPClient } from '../../MWPClient.js';
+import { EIP1193Provider } from './EIP1193Provider.js';
+import { standardErrors } from ':core/error/index.js';
+import { serializeError } from ':core/error/serialize.js';
+import { Wallet, Wallets } from ':core/wallet/index.js';
 
 vi.mock('expo-web-browser', () => ({
   openBrowserAsync: vi.fn(),

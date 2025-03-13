@@ -1,20 +1,20 @@
-import { postRequestToWallet } from './components/communication/postRequestToWallet';
-import { KeyManager } from './components/key/KeyManager';
-import { MWPClient } from './MWPClient';
+import { postRequestToWallet } from './components/communication/postRequestToWallet.js';
+import { KeyManager } from './components/key/KeyManager.js';
+import { MWPClient } from './MWPClient.js';
 import {
   decryptContent,
   encryptContent,
   exportKeyToHexString,
   importKeyFromHexString,
-} from ':core/cipher/cipher';
-import { CryptoKey } from ':core/cipher/types';
-import { MWP_RESPONSE_PATH } from ':core/constants';
-import { standardErrors } from ':core/error';
-import { EncryptedData, RPCResponseMessage } from ':core/message';
-import { AppMetadata, RequestArguments } from ':core/provider/interface';
-import { ScopedAsyncStorage } from ':core/storage/ScopedAsyncStorage';
-import { fetchRPCRequest } from ':core/util/utils';
-import { Wallets } from ':core/wallet';
+} from ':core/cipher/cipher.js';
+import { CryptoKey } from ':core/cipher/types.js';
+import { MWP_RESPONSE_PATH } from ':core/constants.js';
+import { standardErrors } from ':core/error/index.js';
+import { EncryptedData, RPCResponseMessage } from ':core/message/index.js';
+import { AppMetadata, RequestArguments } from ':core/provider/interface.js';
+import { ScopedAsyncStorage } from ':core/storage/ScopedAsyncStorage.js';
+import { fetchRPCRequest } from ':core/util/utils.js';
+import { Wallets } from ':core/wallet/index.js';
 
 vi.mock(':core/util/utils', async () => {
   const actual = await vi.importActual(':core/util/utils');

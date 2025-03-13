@@ -1,9 +1,9 @@
 import * as WebBrowser from 'expo-web-browser';
 
-import { postRequestToWallet } from './postRequestToWallet';
-import { decodeResponseURLParams, encodeRequestURLParams } from './utils/encoding';
-import { RPCRequestMessage, RPCResponseMessage } from ':core/message';
-import { Wallet } from ':core/wallet';
+import { postRequestToWallet } from './postRequestToWallet.js';
+import { decodeResponseURLParams, encodeRequestURLParams } from './utils/encoding.js';
+import { RPCRequestMessage, RPCResponseMessage } from ':core/message/index.js';
+import { Wallet } from ':core/wallet/index.js';
 
 vi.mock('expo-web-browser', () => ({
   openAuthSessionAsync: vi.fn(),
