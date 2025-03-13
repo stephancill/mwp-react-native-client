@@ -1,4 +1,3 @@
-import { beforeEach, afterEach, describe, test, expect, vi } from 'vitest';
 import { MWPClient } from '../../MWPClient';
 import { EIP1193Provider } from './EIP1193Provider';
 import { standardErrors } from ':core/error';

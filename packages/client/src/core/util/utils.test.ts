@@ -1,4 +1,3 @@
-import { describe, expect, it, vi } from 'vitest';
 import { LIB_VERSION } from '../../version';
 import { checkErrorForInvalidRequestArgs, fetchRPCRequest } from './utils';
 import { standardErrors } from ':core/error';

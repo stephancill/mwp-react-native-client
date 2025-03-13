@@ -1,4 +1,3 @@
-import { describe, it, expect, beforeEach, vi } from 'vitest';
 import * as WebBrowser from 'expo-web-browser';
 
 import { postRequestToWallet } from './postRequestToWallet';

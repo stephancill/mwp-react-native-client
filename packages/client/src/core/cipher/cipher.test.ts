@@ -1,5 +1,3 @@
-import { describe, expect, it, beforeAll } from 'vitest';
-
 import { unzlibSync, zlibSync } from 'fflate';
 
 import {

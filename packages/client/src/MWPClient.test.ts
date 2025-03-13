@@ -1,4 +1,3 @@
-import { beforeEach, beforeAll, afterAll, describe, expect, it, vi } from 'vitest';
 import { postRequestToWallet } from './components/communication/postRequestToWallet';
 import { KeyManager } from './components/key/KeyManager';
 import { MWPClient } from './MWPClient';
