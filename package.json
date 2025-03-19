@@ -3,6 +3,9 @@
     "author": "Coinbase, Inc.",
     "license": "Apache-2.0",
     "private": true,
+    "scripts": {
+        "lint": "yarn workspaces foreach -pt --all run lint"
+    },
     "workspaces": [
         "packages/*"
     ],
